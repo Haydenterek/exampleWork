@@ -19,9 +19,6 @@ GROUP BY
 ORDER BY
   sensor_count DESC;
 
--- SELECT * FROM RankForestSensors;
--- SELECT * FROM ArborDB.forest;
-
 DROP FUNCTION IF EXISTS ArborDB.topSensors(INTEGER, INTEGER);
 CREATE OR REPLACE FUNCTION ArborDB.topSensors(x INTEGER, k INTEGER)
 RETURNS TABLE (
@@ -46,15 +43,6 @@ BEGIN
     LIMIT k;
 end;
 $$;
-
--- INSERT INTO ArborDB.clock(synthetic_time)
--- values(now());
-
--- SELECT * FROM arbordb.clock;
-
--- SELECT * FROM arbordb.report;
-
--- SELECT * FROM topSensors(5, 20);
 
 DROP FUNCTION IF EXISTS ArborDB.habitableEnvironments(genus VARCHAR(30), epithet VARCHAR(30), k INTEGER);
 
@@ -96,17 +84,6 @@ BEGIN
 end;
 $$;
 
--- SELECT * FROM arbordb.tree_species;
--- SELECT * FROM arbordb.report;
--- SELECT * FROM arbordb.sensor;
--- SELECT * FROM arbordb.forest;
--- SELECT * FROM listSensors(10);
-
--- SELECT * FROM arbordb.report WHERE temperature <= 44 AND temperature >= 34;
-
--- SELECT * FROM habitableEnvironments('Larix', 'Lyallii', 5);
-
--- pushing this function to repo, this function was not submitted to the gradescope before the deadline
 DROP FUNCTION IF EXISTS ArborDB.threeDegrees(f1 INTEGER, f2 INTEGER);
 CREATE OR REPLACE FUNCTION ArborDB.threeDegrees(f1 INTEGER, f2 INTEGER)
 -- Return a string of the path between f1 and f2
@@ -188,21 +165,3 @@ AS $$
 
     end;
 $$;
-
--- CALL addSpeciesToForest(1, 'Larix', 'Lyallii');
--- CALL addSpeciesToForest(4, 'Larix', 'Lyallii');
--- CALL addSpeciesToForest(3, 'Larix', 'Lyallii');
--- CALL addSpeciesToForest(7, 'Larix', 'Lyallii');
--- CALL addSpeciesToForest(9, 'Larix', 'Lyallii');
--- CALL addSpeciesToForest(2, 'Salix', 'Amygdaloides');
--- CALL addSpeciesToForest(13, 'Salix', 'Amygdaloides');
--- CALL addSpeciesToForest(17, 'Salix', 'Amygdaloides');
--- CALL addSpeciesToForest(20, 'Salix', 'Amygdaloides');
--- CALL addSpeciesToForest(6, 'Salix', 'Amygdaloides');
-
-
-
--- SELECT * FROM arbordb.forest;
--- SELECT * FROM arbordb.tree_species;
--- SELECT * FROM threeDegrees(1,7);
--- SELECT * FROM arbordb.found_in;

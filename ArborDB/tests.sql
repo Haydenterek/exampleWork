@@ -15,8 +15,6 @@ SELECT * FROM ArborDB.state;
 CALL employworkertostate('PA', '911277048');
 SELECT * FROM ArborDB.employed;
 
--- INSERT INTO ArborDB.clock(synthetic_time)
---VALUES(CURRENT_TIMESTAMP);
 SELECT * FROM ArborDB.clock;
 
 CALL placeSensor(10, 3, 3, '111131312');
