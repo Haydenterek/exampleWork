@@ -3,6 +3,8 @@ Group project for the ArborDB assignment in CS1555
 
 The following README is from the University of Pittsburgh CS 1555 class from Panos Chrysanthis. The purpose of this README and following code are only to showcase work done publicly to those that may need to view. There is no claim of ownership other than the code written by myself and the repository associated. This assignment should not be used for anything other than research purposes. The contents of the README below outline what was given to us for use during our time in the class. This assignment was a group assignment with the other members listed below. All work done by them is owned by them only.
 
+Arbor DB is a database that allows for forest management. It allows for forests, workers, sensors, states, species all to be added to the db. From there, many different analytical tools can be used such as finding habitable forest based on data or finding if you can get from one forest to another through only 3 conjoining forests.
+
 ## Group Members
 - Christian Benton
 - William Cornish
