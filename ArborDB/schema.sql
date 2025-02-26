@@ -117,7 +117,7 @@ CREATE TABLE ArborDB.sensor (
     FOREIGN KEY (maintainer_id) REFERENCES ArborDB.worker (SSN) ON DELETE CASCADE
 );
 
--- Complete, phase1 ans key shows report_time being a partial key, do we need to enforce that?
+-- Complete
 CREATE TABLE ArborDB.report (
     sensor_id INTEGER NOT NULL,
     report_time TIMESTAMP NOT NULL,
