@@ -153,31 +153,3 @@ public boolean updateRoute(String source, String destination, int distance, doub
 .	Below is an example input file, visual graph, and response to some of the queries listed above. The index numbers for the vertices are based on the order that the cities appear in the file (note that the indexing starts at 1).
 
 ![](docs/a4.png)
-
-## Extra Credit (10 points)
-
-For each of the three "shortest path" searches listed above, if multiple paths "tie" for the shortest, you should return **all** of them.
-
-## Submission Requirements
-
-You must submit to Gradescope at least the following file:
-1.	`AirlineSystem.java`
-
-The idea from your submission is that the autograder can compile and run your programs from the command line WITHOUT ANY additional files or changes, so be sure to test it thoroughly before submitting it. If the autograder cannot compile or run your submitted code it will be graded as if the program does not work.
-
-Note: If you use an IDE such as NetBeans, Eclipse, or IntelliJ, to develop your programs, make sure they will compile and run on the command-line before submitting – this may require some modifications to your program (such as removing some package information).
-
-## Rubrics
-
-Item|Points
-----|------|
-(**Mandatory**) `loadRoutes`|	12
-(**Mandatory**) `retrieveCityNames`|	12
-(**Mandatory**) `retrieveDirectRoutesFrom`|	12
-`fewestStopsItinerary`|	12
-`shortestDistanceItinerary`|	12
-`shortestDistanceItinerary` with transit city|	10
-`addCity`|	10
-`addRoute`|	10
-`updateRoute`|	10
-Extra Credit|	10 points
